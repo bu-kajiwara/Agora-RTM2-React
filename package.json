@@ -1,10 +1,10 @@
 {
-  "name": "agora-rtm-react",
+  "name": "agora-rtm2-react",
   "version": "1.1.2",
-  "description": "A wrapper for Agora RTM Web SDK to use with react/reactjs",
-  "author": "EkaanshArora",
+  "description": "A wrapper for Agora RTM2 Web SDK to use with react/reactjs",
+  "author": "bu-kajiwara",
   "license": "",
-  "repository": "AgoraIO-Community/agora-rtm-react",
+  "repository": "bu-kajiwara/Agora-RTM2-React",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
@@ -63,6 +63,6 @@
     "dist"
   ],
   "dependencies": {
-    "agora-rtm-sdk": "1.4.3-203"
+    "agora-rtm-sdk": "2.1.10"
   }
 }

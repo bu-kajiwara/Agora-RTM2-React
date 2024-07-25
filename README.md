@@ -5,14 +5,16 @@ A thin react.js wrapper for [Agora RTM SDK](https://www.npmjs.com/package/agora-
 This wrapper supports **React >= v16.8**
 
 ## Install
+
 ```bash
-npm install agora-rtm-react
+npm install agora-rtm2-react
 ```
 
 ## Usage
+
 ```tsx
 import React from 'react'
-import { createChannel, createClient, RtmMessage } from 'agora-rtm-react'
+import { createClient, RtmMessage } from 'agora-rtm2-react'
 
 const useClient = createClient('<Agora App ID>');
 const useChannel = createChannel('channelName')
@@ -25,7 +27,7 @@ const App = () => {
     await client.login({ uid: 'userId' })
     await testChannel.join()
   }
-  
+
   const sendMsg = async (text: string) => {
     const message = client.createMessage({ text, messageType: 'TEXT' })
     await testChannel.sendMessage(message)
@@ -33,10 +35,12 @@ const App = () => {
 ...
 }
 
-``` 
+```
 
 ## Example
+
 A chat example using the wrapper can be found in `./example`
 
 ## Docs
+
 You can view the [wrapper docs](https://agoraio-community.github.io/Agora-RTM-React), [Web SDK docs](https://docs.agora.io/en/Real-time-Messaging/landing-page?platform=Web) and the [SDK API Reference](https://docs.agora.io/en/Real-time-Messaging/API%20Reference/RTM_web/v1.4.3/index.html)
