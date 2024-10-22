@@ -1,7 +1,8 @@
 import AgoraRTM, { RTMClient, RTMConfig } from 'agora-rtm-sdk'
 
 export default AgoraRTM
-export * from 'agora-rtm-sdk'
+import * as SDK from 'agora-rtm-sdk'
+export { SDK }
 
 /**
  * Returns a hook to access an RTM client, use this outside your React component.
