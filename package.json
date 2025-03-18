@@ -62,6 +62,7 @@
   "files": [
     "dist"
   ],
+  "types": "./dist/index.d.ts",
   "dependencies": {
     "agora-rtm-sdk": "2.1.10"
   }
